@@ -16,6 +16,7 @@ Everything MDLook can render, with examples you can copy and edit.
 | `++underline++` | underline (MDLook extension) |
 | `~~strikethrough~~` | ~~strikethrough~~ |
 | `==highlight==` | highlighted text (yellow background) |
+| `=={green}highlight==` | highlighted in a named colour or any hex |
 | `` `inline code` `` | monospace inline code |
 
 ### Paragraphs & Line Breaks
@@ -40,7 +41,7 @@ New paragraph after blank line.
 ###### H6
 ```
 
-All headings become **collapsible sections** in Read mode. Click the heading text or the left border line to toggle. Nested headings collapse hierarchically — collapsing an H2 hides all its H3/H4 children.
+All headings become **collapsible sections** in Read mode. Click the heading text or the left border line to toggle. Nested headings collapse hierarchically — collapsing an H2 hides all its H3/H4 children. Dragging across a heading selects its text instead of collapsing it.
 
 ### Table of Contents
 
@@ -65,6 +66,8 @@ Write `[TOC]` (or `[toc]`) alone on its own line to insert an auto-generated, co
 
 Bare URLs auto-link automatically: `https://example.com` becomes a clickable link.
 
+Relative paths resolve against the folder the document is in, so `![](photo.png)` shows an image stored beside the file, and `[notes](notes.md)` opens that document in MDLook. Links to other file types open in whatever app Windows uses for them.
+
 ### Lists
 
 **Bullet list:**
@@ -86,6 +89,8 @@ Bare URLs auto-link automatically: `https://example.com` becomes a clickable lin
 - [ ] Unchecked task
 - [x] Completed task
 ```
+
+Checkboxes can be ticked directly in the preview. Clicking one edits the document; Save writes it to disk.
 
 **Nested lists** — indent with 2+ spaces:
 ```
@@ -193,6 +198,16 @@ Block math renders centered with display-mode sizing. Uses KaTeX — see https:/
 {color:rgb(80,250,123)}rgb color{/color}
 ```
 
+### Highlight Colours
+
+Plain `==text==` highlights in yellow. Add a colour in braces to pick another:
+
+```
+=={green}reviewed== and =={blue}pending== and =={#ff6600}custom==
+```
+
+The eight token names above work here too, each with a dark-theme twin, and any hex or CSS colour is accepted. The highlight picker sits next to the highlight button in the Edit toolbar.
+
 ### Color Swatches
 
 Any `#hex` code in text auto-renders a small colored square inline before the code. Works with 3, 6, or 8-digit hex values.
@@ -242,7 +257,10 @@ Prefix with backslash to render literally:
 | `Ctrl + Shift + X` | Strikethrough | Edit |
 | `Ctrl + Shift + H` | Highlight | Edit |
 | `Ctrl + S` | Save file | Edit |
+| `Ctrl + P` | Print / export to PDF | All |
 | `Ctrl + F` | Find | All |
+| `F1` | Help and changelog | All |
+| `F5` | Reload the file from disk | All |
 | `Esc` | Exit Zen mode / close panel | All |
 | `Space` | Teleprompter: pause / resume | Read (when active) |
 | `↑` / `↓` | Teleprompter: speed ±1 | Read (when active) |
@@ -250,9 +268,9 @@ Prefix with backslash to render literally:
 
 ### Editor Toolbar
 
-The Edit mode toolbar provides one-click buttons for: Bold, Italic, Underline, Strikethrough, Highlight, Color (A button with palette), Inline code, Code block, Link, Image, Bullet list, Numbered list, Task list, Blockquote, Horizontal rule, Table, Heading (H1–H4).
+The Edit mode toolbar provides one-click buttons for: Bold, Italic, Underline, Strikethrough, Highlight, Highlight colour, Text colour, Inline code, Code block, Link, Image, Bullet list, Numbered list, Task list, Blockquote, Horizontal rule, Table, Heading (H1–H4).
 
-The top bar also includes: **Open** (browse for `.md` file), **Export** (HTML or Print/PDF), **Save** (save edited file to disk), **?** (Help & Changelog), theme toggle, and Zen mode.
+The top bar also includes: **New window** (blank document), **Open** (browse for a `.md` file, with an arrow for recent files), **Export** (HTML or Print/PDF), **Save** (save edited file to disk), **?** (Help & Changelog), theme toggle, and Zen mode.
 
 ### Collapsible Sections
 
@@ -267,6 +285,10 @@ In Read mode, every heading wraps its content in a collapsible section. Visual i
 ### Outline Panel
 
 Click the **☰** button (top-right in Read or Edit mode) to open the outline sidebar. Lists all headings as a clickable navigation tree. In Read mode, clicking an outline item auto-expands any collapsed parent sections. In Edit mode, the outline updates live as you type and clicking scrolls the preview pane to the heading.
+
+### Word Count
+
+The Edit footer shows lines, words and characters for the document. Select text and it reports the selection instead. In Read mode, selecting text shows the same count in a small pill at the bottom.
 
 ### Context Menu
 
@@ -284,9 +306,13 @@ In Edit mode, drag an image file onto the editor to insert a `![filename](data:.
 
 Click the **⤓** button to export the rendered document as a standalone HTML file with all styles, fonts, KaTeX, and Mermaid included.
 
+### Print and PDF
+
+`Ctrl+P` (or **Export → Print / PDF**) opens the print dialog. Floating controls, the toolbar and the outline are left out of the printed page.
+
 ### Zen Mode
 
-In Edit mode, click the **Zen** button to hide the preview pane and focus on writing. Press `Esc` to exit.
+In Edit mode, click the **Zen** button to hide the preview pane and focus on writing. Press `Esc` to exit; the hint stays on screen the first time, and returns whenever you move the mouse.
 
 ### Teleprompter
 
@@ -300,15 +326,23 @@ In Edit mode, drag the center divider to resize editor/preview panes. **Double-c
 
 Press `Ctrl+F` to open the Find bar. Highlights all matches and lets you navigate between them with arrow buttons or `Enter` / `Shift+Enter`. Works across Read, Edit, and Source modes.
 
+### Files Changed on Disk
+
+MDLook watches the open file. If it changes in another app, the document reloads. If you had unsaved edits, a bar appears offering **Reload** or **Keep mine** instead of overwriting your work. `F5` reloads on demand, and also rereads images that changed beside the document.
+
 ### Windows Integration
 
 **Open a file:** Drag a `.md` file onto `MDLook.exe`, or double-click any `.md` file after associating it.
 
-**Standalone mode:** Run `MDLook.exe` to open with an empty editor. Use the **Open** button in the toolbar to browse and load a `.md` file.
+**Standalone mode:** Run `MDLook.exe` without a file and it opens a start page listing your recent documents. Use the **Open** button in the toolbar to browse for a file, or the arrow beside it for the recent list.
 
-**File association:** Right-click the system tray icon → "Associate .md files" to register MDLook as the default handler for `.md` files with a custom document icon.
+**File association:** Press `F1` and use **Set as default** at the top of the Help panel to register MDLook as the handler for `.md` files, with its own document icon. The same switch turns it off.
 
-**Start with Windows:** Right-click the tray icon → "Start with Windows" to launch MDLook silently at boot.
+**Recent files:** Beyond the menu beside **Open**, right-clicking the MDLook icon on the taskbar shows the same list in Windows' own jump list.
+
+**One window per document:** Each file opens in its own window and remembers its size, position and maximized state. Opening a file that is already open brings that window to the front instead of duplicating it.
+
+**Settings:** The portable copy keeps its settings in a file beside `MDLook.exe`, so a folder on a USB stick carries them with it and leaves nothing behind.
 
 ### Unsaved Changes Warning
 
