@@ -8,7 +8,7 @@
 <p align="center"><strong>A portable, fully offline Markdown editor for Windows.</strong><br>Unzip. Run. No install, no internet, no Electron.</p>
 
 <p align="center">
-  <a href="https://github.com/djosci/MDLook/releases/latest"><img src="badges/download-button.svg" alt="Download MDLook" /></a>
+  <a href="https://github.com/drhenriquetea/MDLook/releases/latest"><img src="badges/download-button.svg" alt="Download MDLook" /></a>
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
   <a href="#features">Features</a> &middot;
   <a href="#comparison">Comparison</a> &middot;
   <a href="#faq">FAQ</a> &middot;
-  <a href="https://github.com/djosci/MDLook/issues">Issues</a>
+  <a href="https://github.com/drhenriquetea/MDLook/issues">Issues</a>
 </p>
 
 ![Read mode](screenshots/screenshot-read-1.png)
@@ -34,7 +34,8 @@ Most Markdown editors are either bloated (Electron), need internet for fonts and
 - **Dark mode and Zen mode.** Full dark theme. Zen mode strips the UI for distraction-free writing.
 - **Outline sidebar.** Hierarchical table of contents for navigating long documents. Click any heading to jump, collapse or expand all sections at once.
 - **Teleprompter.** Auto-scroll your document at adjustable speed. No other Markdown editor has this.
-- **Always ready.** Lives in the system tray. Close the window, it stays running. Next file opens instantly. `Ctrl+S` saves directly to disk.
+- **A window per document.** Open three files, get three windows, each remembering its own size and position. Open one that is already open and MDLook brings you to it instead of a duplicate.
+- **Keeps up with your files.** Edit a document in another app and MDLook reloads it. If you had unsaved changes, it asks first. `Ctrl+S` saves straight to disk.
 
 ## Screenshots
 
@@ -83,8 +84,12 @@ Most Markdown editors are either bloated (Electron), need internet for fonts and
 - 🎬 **Teleprompter mode** (auto-scroll for presentations)
 - 📤 **Export** to standalone HTML
 - 🔗 **File association** (register `.md` files with a custom document icon)
-- 🚀 **Start with Windows** (silent, in tray)
-- 🪟 **Single-instance** (second launch opens files in the existing window)
+- 🪟 **A window per document** (size, position and maximized state remembered per file)
+- 🕒 **Recent files** (menu beside Open, start page, and the Windows jump list)
+- 🔄 **Reloads files changed on disk** (with a prompt when you have unsaved edits)
+- ☑️ **Clickable task checkboxes** in the preview
+- 🖍️ **Highlight colours** (`=={green}text==`, eight named colours or any hex)
+- 🖨️ **Print / export to PDF** (`Ctrl+P`)
 - 💾 **Direct save to disk** (`Ctrl+S`, no download dialogs)
 - 🔎 **Find and replace** (Ctrl+F)
 - 🎨 **Color tokens** for adaptive colored text
@@ -109,15 +114,15 @@ See [GUIDE.md](GUIDE.md) for the full feature reference with examples.
 
 ## Download
 
-**[Portable zip](https://github.com/djosci/MDLook/releases/latest)** (31 MB) - Unzip anywhere, run `MDLook.exe`. Works from a USB stick.
+**[Portable zip](https://github.com/drhenriquetea/MDLook/releases/latest)** (34 MB) - Unzip anywhere, run `MDLook.exe`. Works from a USB stick, and keeps its settings beside the executable.
 
-**[Installer](https://github.com/djosci/MDLook/releases/latest)** (22 MB) - Standard Next > Next > Finish setup.
+**[Installer](https://github.com/drhenriquetea/MDLook/releases/latest)** (23 MB) - Standard Next > Next > Finish setup.
 
 ## FAQ
 
 **Will MDLook support macOS or Linux?**
 
-It's on the radar. MDLook started as a personal tool I built to solve my own problem as a physician. Windows is what I use daily, so that's where it runs today. If there's enough demand, cross-platform is the natural next step. [Open an issue](https://github.com/djosci/MDLook/issues) if this matters to you; that's how I gauge interest.
+It's on the radar. MDLook started as a personal tool I built to solve my own problem as a physician. Windows is what I use daily, so that's where it runs today. If there's enough demand, cross-platform is the natural next step. [Open an issue](https://github.com/drhenriquetea/MDLook/issues) if this matters to you; that's how I gauge interest.
 
 **Is MDLook free?**
 
@@ -129,7 +134,7 @@ This is a known false positive. MDLook is built with PyInstaller, which bundles 
 
 **How do I report a bug or request a feature?**
 
-[Open an issue](https://github.com/djosci/MDLook/issues) on this repository.
+[Open an issue](https://github.com/drhenriquetea/MDLook/issues) on this repository.
 
 ## License
 
