@@ -250,7 +250,7 @@ Prefix with backslash to render literally:
 |----------|--------|------|
 | `Ctrl + 1` | Read mode | All |
 | `Ctrl + 2` | Edit mode (split-pane) | All |
-| `Ctrl + 3` | Source mode (raw HTML) | All |
+| `Ctrl + 3` | Source mode (raw Markdown) | All |
 | `Ctrl + B` | Bold | Edit |
 | `Ctrl + I` | Italic | Edit |
 | `Ctrl + U` | Underline | Edit |

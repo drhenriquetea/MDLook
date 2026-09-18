@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-<p align="center"><strong>A portable, fully offline Markdown editor for Windows.</strong><br>Unzip. Run. No install, no internet, no Electron.</p>
+<p align="center"><strong>A portable, offline Markdown editor for Windows.</strong><br>Unzip. Run. No install, no Electron.</p>
 
 <p align="center">
   <a href="https://github.com/drhenriquetea/MDLook/releases/latest"><img src="badges/download-button.svg" alt="Download MDLook" /></a>
@@ -29,7 +29,7 @@ Most Markdown editors are either bloated (Electron), need internet for fonts and
 - **Double-click and read.** Register `.md` files once, then double-click any Markdown file and it opens beautifully rendered. No project setup, no vault, no config folders.
 - **Live preview as you type.** Split-pane editor with real-time rendering. What you write on the left appears formatted on the right, instantly.
 - **Math and diagrams built-in.** KaTeX for LaTeX equations, Mermaid for flowcharts and diagrams. No plugins, no config. Just works.
-- **Zero install, 100% offline.** Unzip a folder, run `MDLook.exe`. Professional typography, syntax highlighting, everything embedded. No internet required, ever.
+- **Zero install, works offline.** Unzip a folder, run `MDLook.exe`. Fonts, math, diagrams and syntax highlighting are all embedded, so every feature works with no connection. The one exception is the update notice: once a day it asks GitHub whether a newer release exists. Nothing is downloaded, and a switch in the Help panel turns it off.
 - **42 MB total.** Not 300 MB of Chromium. Uses native Windows WebView2.
 - **Dark mode and Zen mode.** Full dark theme. Zen mode strips the UI for distraction-free writing.
 - **Outline sidebar.** Hierarchical table of contents for navigating long documents. Click any heading to jump, collapse or expand all sections at once.
@@ -91,7 +91,7 @@ Most Markdown editors are either bloated (Electron), need internet for fonts and
 - 🖍️ **Highlight colours** (`=={green}text==`, eight named colours or any hex)
 - 🖨️ **Print / export to PDF** (`Ctrl+P`)
 - 💾 **Direct save to disk** (`Ctrl+S`, no download dialogs)
-- 🔎 **Find and replace** (Ctrl+F)
+- 🔎 **Find** (Ctrl+F) with match navigation
 - 🎨 **Color tokens** for adaptive colored text
 
 See [GUIDE.md](GUIDE.md) for the full feature reference with examples.
@@ -101,7 +101,7 @@ See [GUIDE.md](GUIDE.md) for the full feature reference with examples.
 | | MDLook | Typora | Obsidian | VS Code |
 |---|---|---|---|---|
 | Portable (no install) | **Yes** | No | No | No |
-| Fully offline | **Yes** | Partial | Partial | No |
+| Works offline | **Yes**, except an optional daily update check | Partial | Partial | No |
 | Double-click to open `.md` | **Yes** | Yes | No | No |
 | Math (KaTeX) | **Built-in** | Built-in | Plugin | Plugin |
 | Diagrams (Mermaid) | **Built-in** | Built-in | Plugin | Plugin |
@@ -130,7 +130,7 @@ MDLook is currently free to use.
 
 **My antivirus flagged MDLook as suspicious.**
 
-This is a known false positive. MDLook is built with PyInstaller, which bundles a Python runtime into a single executable. Many antivirus engines flag PyInstaller apps by default because malware authors sometimes use the same tool. You can verify the app is safe by checking the VirusTotal scan linked in each release.
+Most likely a false positive. MDLook is built with PyInstaller, which bundles a Python runtime into a single executable, and many antivirus engines flag PyInstaller apps on that basis alone. Every release lists the SHA-256 of both downloads so you can confirm the file you have is the file that was published, and you are welcome to submit it to VirusTotal yourself.
 
 **How do I report a bug or request a feature?**
 
