@@ -294,6 +294,10 @@ The Edit footer shows lines, words and characters for the document. Select text 
 
 Right-click anywhere in Read or Edit mode to open a custom context menu with quick actions (Copy, Select All, and formatting options in Edit mode). The default context menu is replaced by a custom one throughout the app.
 
+### Reading Typeface
+
+The document text is set in Literata, a serif designed for long-form reading on screen. Press `F1` and use the switch under **Reading** to change it to Inter, a sans-serif. The choice applies to Read mode and to the Edit preview at once, and is remembered.
+
 ### Dark / Light Theme
 
 Click the **🌙/☀️** button in the top bar to toggle themes. All colors — including color tokens, Mermaid diagrams, code blocks, and UI elements — adapt automatically.

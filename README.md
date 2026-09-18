@@ -92,6 +92,7 @@ Most Markdown editors are either bloated (Electron), need internet for fonts and
 - 🖨️ **Print / export to PDF** (`Ctrl+P`)
 - 💾 **Direct save to disk** (`Ctrl+S`, no download dialogs)
 - 🔎 **Find** (Ctrl+F) with match navigation
+- 🔤 **Serif or sans-serif** for the document text (Help panel)
 - 🎨 **Color tokens** for adaptive colored text
 
 See [GUIDE.md](GUIDE.md) for the full feature reference with examples.
