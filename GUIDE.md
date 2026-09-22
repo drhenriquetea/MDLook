@@ -259,6 +259,8 @@ Prefix with backslash to render literally:
 | `Ctrl + S` | Save file | Edit |
 | `Ctrl + P` | Print / export to PDF | All |
 | `Ctrl + F` | Find | All |
+| `Ctrl + +` / `Ctrl + -` | Text size bigger / smaller | All |
+| `Ctrl + 0` | Text size back to 100% | All |
 | `F1` | Help and changelog | All |
 | `F5` | Reload the file from disk | All |
 | `Esc` | Exit Zen mode / close panel | All |
@@ -298,6 +300,12 @@ Right-click anywhere in Read or Edit mode to open a custom context menu with qui
 
 The document text is set in Literata, a serif designed for long-form reading on screen. Press `F1` and use the switch under **Reading** to change it to Inter, a sans-serif. The choice applies to Read mode and to the Edit preview at once, and is remembered.
 
+### Text Size
+
+Press `F1` and use the **minus** and **plus** buttons under **Reading**, or hold `Ctrl` and press `+` or `-` anywhere in the app. `Ctrl+0` goes back to 100%.
+
+It scales the text everywhere together: the document, the toolbar, the outline and the panels, from 80% to 160%. Useful on a large screen kept at a low display scale, where most apps end up small.
+
 ### Dark / Light Theme
 
 Click the **🌙/☀️** button in the top bar to toggle themes. All colors — including color tokens, Mermaid diagrams, code blocks, and UI elements — adapt automatically.
@@ -309,6 +317,12 @@ In Edit mode, drag an image file onto the editor to insert a `![filename](data:.
 ### Export HTML
 
 Click the **⤓** button to export the rendered document as a standalone HTML file with all styles, fonts, KaTeX, and Mermaid included.
+
+### Copy HTML
+
+**Export → Copy HTML** puts the document's HTML on the clipboard: the tags themselves, not a whole page. Use it for a field that expects HTML source, such as a CMS body box or a newsletter editor. MDLook's own furniture is stripped first, so the Copy button it draws on code blocks does not travel with the text.
+
+This is different from **Export HTML**, which writes a complete web page with styles and fonts, meant to be opened in a browser.
 
 ### Print and PDF
 

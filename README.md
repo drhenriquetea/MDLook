@@ -83,6 +83,7 @@ Most Markdown editors are either bloated (Electron), need internet for fonts and
 - 📂 **Collapsible sections** (click any heading to fold)
 - 🎬 **Teleprompter mode** (auto-scroll for presentations)
 - 📤 **Export** to standalone HTML
+- 📋 **Copy HTML** to the clipboard (the tags themselves, to paste where HTML source is expected)
 - 🔗 **File association** (register `.md` files with a custom document icon)
 - 🪟 **A window per document** (size, position and maximized state remembered per file)
 - 🕒 **Recent files** (menu beside Open, start page, and the Windows jump list)
@@ -93,6 +94,7 @@ Most Markdown editors are either bloated (Electron), need internet for fonts and
 - 💾 **Direct save to disk** (`Ctrl+S`, no download dialogs)
 - 🔎 **Find** (Ctrl+F) with match navigation
 - 🔤 **Serif or sans-serif** for the document text (Help panel)
+- 🔍 **Text size** (Help panel, or Ctrl with + and −) scales the text everywhere, not just in the document
 - 🎨 **Color tokens** for adaptive colored text
 
 See [GUIDE.md](GUIDE.md) for the full feature reference with examples.
@@ -115,9 +117,9 @@ See [GUIDE.md](GUIDE.md) for the full feature reference with examples.
 
 ## Download
 
-**[Portable zip](https://github.com/drhenriquetea/MDLook/releases/latest)** (34 MB) - Unzip anywhere, run `MDLook.exe`. Works from a USB stick, and keeps its settings beside the executable.
+**[Portable zip](https://github.com/drhenriquetea/MDLook/releases/latest)** (35 MB) - Unzip anywhere, run `MDLook.exe`. Works from a USB stick, and keeps its settings beside the executable.
 
-**[Installer](https://github.com/drhenriquetea/MDLook/releases/latest)** (23 MB) - Standard Next > Next > Finish setup.
+**[Installer](https://github.com/drhenriquetea/MDLook/releases/latest)** (24 MB) - Standard Next > Next > Finish setup.
 
 ## FAQ
 
