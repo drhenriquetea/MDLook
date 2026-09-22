@@ -1,0 +1,30 @@
+name: Bug report
+description: Something in MDLook is broken or behaves wrong
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, and what MDLook did instead of what you expected.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: MDLook version
+      description: Next to the logo at the top left, or under About in the Help panel (F1).
+      placeholder: "5.4.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11"
+  - type: textarea
+    id: sample
+    attributes:
+      label: Markdown that triggers it
+      description: Only if the problem depends on the file. Paste the smallest piece that still shows it.
+      render: markdown

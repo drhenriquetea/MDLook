@@ -1,0 +1,15 @@
+name: Feature request
+description: Something you'd like MDLook to do
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like MDLook to do
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How you handle it today
+      description: Optional. Another app, a workaround, or just living without it.

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question, or not sure it's a bug
+    url: https://github.com/drhenriquetea/MDLook/discussions
+    about: Ask in Discussions. If it turns out to be a bug, it gets moved here.
