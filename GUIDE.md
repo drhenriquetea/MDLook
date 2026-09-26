@@ -352,7 +352,7 @@ MDLook watches the open file. If it changes in another app, the document reloads
 
 **Open a file:** Drag a `.md` file onto `MDLook.exe`, or double-click any `.md` file after associating it.
 
-**Standalone mode:** Run `MDLook.exe` without a file and it opens a start page listing your recent documents. Use the **Open** button in the toolbar to browse for a file, or the arrow beside it for the recent list.
+**Standalone mode:** Run `MDLook.exe` without a file and it opens a start page listing your recent documents. Use the **Open** button in the toolbar to browse for a file, or the arrow beside it for the recent list. The start page keeps its own size and position, like any document window.
 
 **File association:** Press `F1` and use **Set as default** at the top of the Help panel to register MDLook as the handler for `.md` files, with its own document icon. The same switch turns it off.
 

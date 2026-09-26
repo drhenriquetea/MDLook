@@ -30,7 +30,7 @@ Most Markdown editors are either bloated (Electron), need internet for fonts and
 - **Live preview as you type.** Split-pane editor with real-time rendering. What you write on the left appears formatted on the right, instantly.
 - **Math and diagrams built-in.** KaTeX for LaTeX equations, Mermaid for flowcharts and diagrams. No plugins, no config. Just works.
 - **Zero install, works offline.** Unzip a folder, run `MDLook.exe`. Fonts, math, diagrams and syntax highlighting are all embedded, so every feature works with no connection. The one exception is the update notice: once a day it asks GitHub whether a newer release exists. Nothing is downloaded, and a switch in the Help panel turns it off.
-- **42 MB total.** Not 300 MB of Chromium. Uses native Windows WebView2.
+- **16 MB to download, 32 MB installed.** Not 300 MB of Chromium. Uses native Windows WebView2.
 - **Dark mode and Zen mode.** Full dark theme. Zen mode strips the UI for distraction-free writing.
 - **Outline sidebar.** Hierarchical table of contents for navigating long documents. Click any heading to jump, collapse or expand all sections at once.
 - **Teleprompter.** Auto-scroll your document at adjustable speed. No other Markdown editor has this.
@@ -109,7 +109,7 @@ See [GUIDE.md](GUIDE.md) for the full feature reference with examples.
 | Math (KaTeX) | **Built-in** | Built-in | Plugin | Plugin |
 | Diagrams (Mermaid) | **Built-in** | Built-in | Plugin | Plugin |
 | Teleprompter mode | **Yes** | No | No | No |
-| Size | **42 MB** | ~80 MB | ~300 MB | ~500 MB |
+| Size | **16 MB download, 32 MB installed** | ~80 MB | ~300 MB | ~500 MB |
 | Free | **Yes** | $15 | Free* | Free |
 | Electron | **No** | Yes | Yes | Yes |
 
@@ -117,9 +117,9 @@ See [GUIDE.md](GUIDE.md) for the full feature reference with examples.
 
 ## Download
 
-**[Portable zip](https://github.com/drhenriquetea/MDLook/releases/latest)** (35 MB) - Unzip anywhere, run `MDLook.exe`. Works from a USB stick, and keeps its settings beside the executable.
+**[Portable zip](https://github.com/drhenriquetea/MDLook/releases/latest)** (16 MB) - Unzip anywhere, run `MDLook.exe`. Works from a USB stick, and keeps its settings beside the executable.
 
-**[Installer](https://github.com/drhenriquetea/MDLook/releases/latest)** (24 MB) - Standard Next > Next > Finish setup.
+**[Installer](https://github.com/drhenriquetea/MDLook/releases/latest)** (13 MB) - Standard Next > Next > Finish setup.
 
 ## FAQ
 
