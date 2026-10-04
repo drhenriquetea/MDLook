@@ -263,6 +263,7 @@ Prefix with backslash to render literally:
 | `Ctrl + 0` | Text size back to 100% | All |
 | `F1` | Help and changelog | All |
 | `F5` | Reload the file from disk | All |
+| `Ctrl + Alt + T` | Expand or collapse all sections | Read |
 | `Esc` | Exit Zen mode / close panel | All |
 | `Space` | Teleprompter: pause / resume | Read (when active) |
 | `↑` / `↓` | Teleprompter: speed ±1 | Read (when active) |
@@ -283,6 +284,7 @@ In Read mode, every heading wraps its content in a collapsible section. Visual i
 - **Dashed orange border** — indicates collapsed state
 - **Badge** — shows hidden content count, e.g. "(3 blocks)"
 - **▲ All / ▼ All buttons** — collapse or expand every section at once (top-right corner)
+- **`Ctrl + Alt + T`**: the same from the keyboard. Expands everything if any section is collapsed, otherwise collapses everything
 
 ### Outline Panel
 
@@ -353,6 +355,8 @@ MDLook watches the open file. If it changes in another app, the document reloads
 **Open a file:** Drag a `.md` file onto `MDLook.exe`, or double-click any `.md` file after associating it.
 
 **Standalone mode:** Run `MDLook.exe` without a file and it opens a start page listing your recent documents. Use the **Open** button in the toolbar to browse for a file, or the arrow beside it for the recent list. The start page keeps its own size and position, like any document window.
+
+**Where is this file:** Press `F1` and look under **Current File Location**. **Copy path** puts the folder on the clipboard; **Show in Explorer** opens that folder in Windows Explorer with the file already selected.
 
 **File association:** Press `F1` and use **Set as default** at the top of the Help panel to register MDLook as the handler for `.md` files, with its own document icon. The same switch turns it off.
 
